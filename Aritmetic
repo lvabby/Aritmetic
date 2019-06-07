@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+public class Aritmetic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	String num1 = JOptionPane.showInputDialog("Enter first number: ");
+	String num2 = JOptionPane.showInputDialog("Enter Second number: ");
+	//create output
+	String output = String.format("The sum of the two numbers is: %d%nThe difference of the two numbers is: %d%nThe product of the two numbers is: %d%nThe quotient of the two numbers is: %d%n,", Integer.parseInt(num1)+Integer.parseInt(num2), Integer.parseInt(num1)-Integer.parseInt(num2), Integer.parseInt(num1)*Integer.parseInt(num2), Integer.parseInt(num1)/Integer.parseInt(num2));
+
+	//display message 
+	JOptionPane.showMessageDialog(null, output);
+	}//end main
+
+}//end class
